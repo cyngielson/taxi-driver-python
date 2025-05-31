@@ -9,12 +9,7 @@
       "cmdLineToolsVersion": "latest",
       "ndkVersion": "25.2.9519653"
     }
-  },
-  "postCreateCommand": [
-    "bash",
-    "-c",
-    "pip install --upgrade pip && pip install buildozer python-for-android && sudo apt-get update && sudo apt-get install -y build-essential git unzip openjdk-17-jdk python3-dev"
-  ],
+  },  "postCreateCommand": "bash -c 'sudo apt-get update && sudo apt-get install -y build-essential git unzip openjdk-17-jdk python3-dev python3-pip && pip3 install --upgrade pip setuptools wheel && pip3 install buildozer python-for-android cython'",
   "customizations": {
     "vscode": {
       "extensions": [
