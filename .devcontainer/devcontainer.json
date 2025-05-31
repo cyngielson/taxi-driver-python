@@ -1,0 +1,29 @@
+{
+  "name": "Taxi Driver Python Build Environment",
+  "image": "mcr.microsoft.com/devcontainers/python:3.8",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "17"
+    },
+    "ghcr.io/devcontainers/features/android-sdk:1": {
+      "cmdLineToolsVersion": "latest",
+      "ndkVersion": "25.2.9519653"
+    }
+  },
+  "postCreateCommand": [
+    "bash",
+    "-c",
+    "pip install --upgrade pip && pip install buildozer python-for-android && sudo apt-get update && sudo apt-get install -y build-essential git unzip openjdk-17-jdk python3-dev"
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-vscode.vscode-json",
+        "ms-vscode.hexeditor"
+      ]
+    }
+  },
+  "forwardPorts": [8000, 3000],
+  "remoteUser": "vscode"
+}

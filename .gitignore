@@ -1,0 +1,39 @@
+# Build directories
+.buildozer/
+.gradle/
+build/
+bin/
+dist/
+
+# Virtual environments
+venv_chaquopy/
+.venv/
+env/
+
+# IDE files
+.idea/
+.qodo/
+*.iml
+
+# Local properties
+local.properties
+
+# Android
+*.apk
+*.aab
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
